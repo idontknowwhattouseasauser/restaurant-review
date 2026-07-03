@@ -8,3 +8,13 @@ img{
     height: 250px;
 }
 
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#moving{
+    text-align: center;
+}
