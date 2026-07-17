@@ -10,18 +10,18 @@ class Shop{
 
 
 class UI{
-    static addshoptolist=(shop-form)=>{
+    static addshoptolist(food){
         const list=document.getElementById("shop-list");
-        const row=document.createElement("tr")
+        const row=document.createElement("tr");
         row.innerHTML=`<td>${food.reviewer}</td>
         <td>${food.shop}</td>
         <td>${food.type}</td>
         <td>${food.rate}</td>
-        <td>${food.message}</td>`
-        list.appendChild(row)
+        <td>${food.message}</td>`;
+        list.appendChild(row);
     }
     static displayshops=()=>{
-        default_shops.forEach(shops => UI.addshoptolist(shop)
+        default_shops.forEach(shop=> UI.addshoptolist(shop)
             
         );
     }
@@ -38,7 +38,7 @@ function addashop(e){
     const type=document.querySelector("#type").value;
     const rate=document.querySelector("#rate").value;
     const mr=document.querySelector("#mr").value;
-    const shop=new Shop(yn, rn, type, rate, mr)
+    const shop=new Shop(yn, rn, type, rate, mr);
     UI.addshoptolist(shop)
     
 }
