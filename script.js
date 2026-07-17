@@ -20,15 +20,10 @@ class UI{
         <td>${food.message}</td>`;
         list.appendChild(row);
     }
-    static displayshops=()=>{
-        default_shops.forEach(shop=> UI.addshoptolist(shop)
-            
-        );
-    }
+    
     
 }
 
-UI.displayshops()
 document.querySelector("#shop-form").addEventListener("submit",addashop)
 function addashop(e){
     console.log("formSubmitted");
